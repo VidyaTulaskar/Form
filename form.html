@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>HTML Form using form tag and elements</legend>
+                    
+            <div>
+                <label for="name">Enter Name</label>
+                <input type="text" id="name"  placeholder="enter your fullname">
+            </div>    
+            <br/>
+
+            <div>
+                <label for="email">Enter  Email</label>
+                <input type="text" id="email"  placeholder="enter your email" title="abc0@gmail.com">
+            </div>    
+            <br/>
+
+            <div>
+                <label for="pass">Enter Passward</label>
+                <input type="password" id="pass" name="Passward" placeholder="enter your Passward">
+            </div>
+            <br/>
+
+            <div>
+                <label for="telno">Enter Telephone Number</label>
+                <input type="tel" id="telno" name="telno" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <small>formate:123-456-7890</small>
+            </div>
+            <br/>
+                        
+            <div>    
+                <lable for="gen_m">Choose Gender:</lable>
+                <input type="radio" id="gen_m" name="gender" value="Male">Male
+                <input type="radio" id="gen_f" name="gender" value="Female">Female
+                <input type="radio" id="gen_t" name="gender" value="trans">Prefer not to say
+            </div>
+            <br/>
+                
+            <div>
+                <label for="box1">Language:</label>
+                <input type="checkbox" id="box1" name="Language">English
+                <input type="checkbox" id="box2" name="Language">Hindi
+                <input type="checkbox" id="box3" name="Language">Marathi
+                <input type="checkbox" id="box4" name="Language">Telgu
+            </div>
+            <br/>
+            
+    
+            <div>
+                <label for="dob">Choose DOB</label>
+                <input type="date" id="dob" name="date">
+            </div>    
+            <br/>
+            
+            <div>
+                <label for="add">Choose your state:</label>
+                <select name="state" id="add"<!--multiple-->>
+                    <option value="">--Please choose your state--</option>
+                    <option value="MH">MAHARASHTRA</option>
+                    <option value="TE">TELANGANA</option>
+                    <option value="PU">PUNJAB</option>
+                    <option value="UP">UTTAR PRADESH</option>
+                    <option value="BI">BIHAR</option>
+                    <option value="GU">GUJARAT</option>
+                    <option value="HP">HIMACHAL PRADESH</option>    
+                    <option value="other">other</option>
+                </select> 
+            </div>
+            <br/>
+
+            <div>
+                <textarea id="text" name="info" rows="5" cols="29" title="Your Info">you can type here about yourself!! :) </textarea>   
+                <label for="text">  Tell something about you</label>
+            </div>
+            <br/>
+            
+            <div>
+                <label for="fileselect">Upload Resume:</label>
+                <input type="file" name="file" id="fileselect">
+            </div>
+            <br/>
+
+            <div>
+            <input type="submit" value="Submit">
+            <button>Cancel</button>
+            </div>
+            <br/>
+
+            <div>
+                <input type="image"id="image" alt="arrow image" src="image/arrow.png" height="20px" width="20px">
+            </div>
+
+        </fieldset> 
+    </form>
+</body>
+</html>
