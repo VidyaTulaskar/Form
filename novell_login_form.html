@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novell Form</title>
+    <style>
+        td {
+            text-align: justify;
+        }
+        p{
+            font-size: 25px;
+            text-align: center;
+        }
+        div{
+            text-align: center;
+        }
+        table{
+            background-color: rgb(192, 207, 236);
+            padding: 10px;
+        }
+        input[type=submit], input[type=reset]{
+            cursor: pointer;
+            /*font-size: 13px;*/
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <p><strong>Novell Services Login</strong></p> 
+                    <table id="inside">
+                        <tr>
+                            <td>Username:</td>
+                            <td><input type="text" size="30" id="uname" name="uname"/></td>
+                        </tr>
+                        <tr>
+                            <td>Password:</td>
+                            <td><input type="password" size="30" id="pass" name="pass"/></td>
+                        </tr>
+                        <tr>
+                            <td>City of<br/> Employment:</td>
+                            <td><input type="text" size="30" id="cname" name="cname"/></td>
+                        </tr>
+                        <tr>
+                            <td>Web server:</td>
+                            <td>
+                                <select name="webserv">
+                                    <option value="default" selected>
+                                        --- Choose a server ---
+                                    </option>
+                                    <option value="Human Resources">
+                                        Human Resources
+                                    </option>
+                                    <option value="Development">
+                                        Development
+                                    </option>
+                                    <option value="Accounting">
+                                        Accounting
+                                    </option>
+                                    <option value="Sales">
+                                        Sales
+                                    </option>
+                                    <option value="Other">
+                                        Other
+                                    </option>
+                                </select>    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Please specify<br/> your role:</td>
+                            <td>
+                                <input type="radio" id="r1" name="role"> Admin <br/>
+                                <input type="radio" id="r2" name="role"> Engineer<br/>
+                                <input type="radio" id="r3" name="role"> Manager <br/>
+                                <input type="radio" id="r4" name="role"> Guest <br/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Single Sign-on<br/> to the following:</td>
+                            <td>
+                                <input type="checkbox" id="c1" name="mail"> Mail <br/>
+                                <input type="checkbox" id="c2" name="payroll"> Payroll <br/>
+                                <input type="checkbox" id="c3" name="self-service"> Self-service <br/>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                </td>
+            </tr>      
+            <tr>
+                <td>
+                    <div>
+                        <input type="submit" value="Login" >
+                        <input type="reset">
+                    </div>   
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
